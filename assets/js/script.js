@@ -32,9 +32,16 @@ setInterval(currentTime, 1000);
     // $('.time-block').css("background-color", "grey");
 // };
 
-var currentHour = moment().hours()
-console.log(currentHour);
-
+function hourColor() {
+    var currentHour = moment().hours();
+    console.log(currentHour);
+    $('.time-block').each(function () {
+        var plannerHour = parseInt($(this).children('button').attr('id'));
+        console.log(this);
+        console.log(plannerHour);
+    });
+};
+hourColor();
 
 
 

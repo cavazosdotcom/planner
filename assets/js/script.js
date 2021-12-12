@@ -32,7 +32,8 @@ setInterval(currentTime, 1000);
     // $('.time-block').css("background-color", "grey");
 // };
 
-
+var currentHour = moment().hours()
+console.log(currentHour);
 
 
 

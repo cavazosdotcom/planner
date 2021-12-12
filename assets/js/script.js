@@ -27,11 +27,6 @@ var currentTime = function (){
 setInterval(currentTime, 1000);
 
 
-
-// if (time < currentTime) {
-    // $('.time-block').css("background-color", "grey");
-// };
-
 function hourColor() {
     var currentHour = moment().hours();
     console.log(currentHour);
@@ -40,8 +35,14 @@ function hourColor() {
         console.log(this);
         console.log(plannerHour);
         if (currentHour > plannerHour){
-            $(this).css("background-color", 'yellow');
-            
+            // $(this).css("background-color", 'yellow');
+            $(this).addClass('past');
+        } else if (currentHour === plannerHour){
+            // $(this).removeClass('past');
+            $(this).addClass('present');
+        } else {
+            // $(this).removeClass('present');
+            $(this).addClass('future');
         };
     });
 };

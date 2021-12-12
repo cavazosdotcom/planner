@@ -1,3 +1,7 @@
+// var time;
+// var value;
+// var today;
+
 $('.save-btn').on('click', function(){
     const time = $(this).attr('id');
     console.log(time);
@@ -9,7 +13,6 @@ $('.save-btn').on('click', function(){
     
 });
 
-// $('#9 .description').val(localStorage.getItem('9'));
 
 
 for (let i = 9; i < 12; i++){
@@ -18,15 +21,18 @@ for (let i = 9; i < 12; i++){
 
 
 var currentTime = function (){
-    today = moment();
+    const today = moment();
     $('#current-day').text(today.format('MMMM Do YYYY, h:mm:ss a'));
 }; 
 setInterval(currentTime, 1000);
 
 
-// $('#9').siblings('.description').val(localStorage.getItem('9'));
-// $('#10').siblings('.description').val(localStorage.getItem('10'));
-// $('#11').siblings('.description').val(localStorage.getItem('11'));
+
+// if (time < currentTime) {
+    // $('.time-block').css("background-color", "grey");
+// };
+
+
 
 
 

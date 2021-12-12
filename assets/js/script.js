@@ -39,6 +39,10 @@ function hourColor() {
         var plannerHour = parseInt($(this).children('button').attr('id'));
         console.log(this);
         console.log(plannerHour);
+        if (currentHour > plannerHour){
+            $(this).css("background-color", 'yellow');
+            
+        };
     });
 };
 hourColor();

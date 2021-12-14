@@ -10,7 +10,7 @@ Creating a working planner that keeps track of time and events in real time, and
 
 # Picture
 
-![Work Day Planner](assets/img/planner.png)
+![Work Day Planner](assets/img/Planner.png)
 
 # Work Flow
 
